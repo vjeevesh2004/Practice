@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #79b8ec;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jeevesh Varshney</h1>
+        <h2>Student</h2>
+        <h2> Email Id:- 26dsprash@rkgit.edu.in</h2>
+        <img src="C:\Users\jeevesh varshney\Desktop\photo.png" alt="image"/> 
+    </header>   
+            <h3>2nd year B.tech (Computer Science and Engineering (Data Science)) student at Raj Kumar Goel Institute of Technology with mediocre academic record and keen interest in the field of Data Science.<br />
+                I'm a student who have good writing skills which is acceptable, righteous and satisfactory in every manner.
+I can help with content writing, article writing and rewriting.
+My strength is that I'm honest towards my work and life.
+        </h3></div>
+        <div>
+            <h3>Carrier Objective </h3>
+            <p>In purisit of an opportunity in the field of  Data Science </p>
+        <div>
+            <h4><b>Qualification</b></h4> 
+            <p>Raj Kumar Goel Institute of Technology, Ghaziabad<br>
+                2nd  Semester-8.03<br>
+                1st  Semester-8.45<br>
+                SCHOOL<br>
+                .Intermediate-84.3<br>
+                .Matriculation-88.4<br>
+                <b>PROFESSIONAL QUALIFICATION</b><br>
+                . Successfully Completed Python Programming Essentials Bootcamp(29/05/2023 - 31/05/2023) by Lets Upgrade.<br>
+                . Successfully Completed 'Excel for Beginners' by Great Learning Academy(Sep 2023)<br>
+                . Successfully Completed 'What is Data Science' by IBM through Coursera. (Oct 2023)<br>
+                </p>
+        </div> 
+        <h4><b>Achievements</b></h4> 
+        <p> 
+            •   1st runner up in The Airborne Archers competition 2023.<br>
+            •   1st runner up in ‘Stage Play’ in TATVA’2023.<br>
+            •   Winner in ‘Street Play’ in TATVA’2023.<br/>
+            •   Won UDHBHAV 5.0 under acting category organised by Satyarth(RKGIT)<br/>
+            •   Got a tag of ‘The Innovator’ during Group Discussion Competition on IEEE Day.<br> 
+            •   Participated in “कथा KAAR” organised by PRADARSHANI(DTU)<br/>
+            •   Particpated in ‘IMPROVISADO 6.0' & ‘World Parliament’ organised by Literary Society Brilliant Insightful Rhetor’s Debonair Society (BIRDS) (RKGIT)<br/>
+            </p> 
+        <form onsubmit="return validateForm()">       
+            <!-- Add a download button for the entire webpage -->
+            <button type="button" onclick="downloadWebpage()">Download Webpage</button>
+          </form>
+        
+          <script>
+            function downloadWebpage() {
+              // Get the HTML content of the entire webpage
+              var htmlContent = document.documentElement.outerHTML;
+        
+              // Create a Blob containing the HTML content
+              var blob = new Blob([htmlContent], { type: 'text/html' });
+        
+              // Create a download link
+              var downloadLink = document.createElement('a');
+              downloadLink.href = URL.createObjectURL(blob);
+              downloadLink.download = 'webpage.html';
+        
+              // Append the link to the document and trigger the download
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+        
+              // Remove the link from the document
+              document.body.removeChild(downloadLink);
+            }
+          </script>
+</body>
+</html>
+
+
+
