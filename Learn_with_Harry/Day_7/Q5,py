@@ -1,0 +1,6 @@
+# n!  = 1 X 2 X 3...........X n
+factorial = 1 
+num = int(input("enter the number"))
+for i in range(1, num+1):
+    factorial = factorial * i
+print(f"the factorial of this {num} is {factorial}")
