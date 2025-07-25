@@ -1,0 +1,17 @@
+class Student4 {
+    int id;
+    String name;
+
+    Student4(int i, String n) {
+        id = i;
+        name = n;
+        System.out.println(id + " " + name);
+    }
+}
+
+public class B {
+    public static void main(String[] args) {
+        new Student4(111, "Karan");
+        new Student4(222, "Aryan");
+    }
+}
